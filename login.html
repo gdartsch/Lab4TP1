@@ -1,19 +1,21 @@
+<!DOCTYPE html>
+
 <html>
     <head>
         <title>TP 1 LAB4</title>
-        <script type="text/javascript" src="login.js"> 
+        <script type="text/javascript" src="funciones.js"> 
         </script>     
     </head>
 
-    <body>
+    <body >
         <p>
-            <form id="loginForm" onsubmit="ingresar()">
+            <form id="login-form" onsubmit="ingresar(event)">
                 <h2>Usuario</h2><br>
                 <input type="text" id="usuario" name="usuario" value=""><br><br>
                 <h2>Clave</h2><br>
                 <input type="text" id="clave" name="clave" value=""><br><br>
-                <button type="submit" name="mysubmit" value="Submit">Ingresar</button>
-            </form>            
+                <button id="boton">Ingresar</button>
+            </form>        
         </p>
 	</body>
 </html>
