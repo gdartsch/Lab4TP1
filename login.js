@@ -14,4 +14,9 @@ async function ingresar(){
     .then(data => {
         console.log(data);
     }).catch(error => console.error(error));
+
+    const changeStatusUser = (userId, bloqueado, listener)=>{
+        fetch(url + '/tp/lista.php?action=BLOQUEAR&idUser=${userid}&estado=${bloqueado}')
+            .then(res => {listener()}).catch(err =>{})
+    }
 }
